@@ -6573,7 +6573,10 @@ a.magnific-popup:hover .overlay {
 
 /* -- latest-blogs Section
 --------------------------------------------------------------*/
+.complete {
 
+  padding-right: 4ch;
+}
 .latest-blogs .post-content{
     position: relative;
 }
