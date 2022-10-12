@@ -69,9 +69,16 @@
 						</form>
 					</div>
 					<div class="shopping-cart">
-						<a href="shop.html">
+						<a href="/shop.html">
 							<i class="icon icon-shopping-cart"></i>
+							
+							<div class="total-items-in-cart">
+								0
+							</div>
 						</a>
+						
+							
+						
 					</div>
 				</div><!--action-menu-->
 
@@ -100,75 +107,152 @@
 	</div>
 </div><!--site-banner-->
 
-<section class="our-team bg-sand padding-large">
-	<div class="container">
-		<div class="row">
-
-				<div class="product-item col-md-3 pb-4">
-					<a href="single-product.html" class="product-image"><img src="images/tshirt.png"></a>
-					<div class="text-comtent text-center">
-						<h5 class="pt-4"><a href="single-product.html">T-shirt</a></h5>
-						<p>standard - T-shirt</p>
-						<span class="price colored">$12</span>
-					</div>
+		
+	<section>		
+			
+		
+			
+		
+		<div class="products-list">
+			<div class="products">
+				<!-- render porducts here -->
+			</div>
+			
+			<div class="cart">
+				<h2> Your Cart </h2>
+				
+				
+				<div class="cart-header">
+					<div class="column1">Item</div>
+					<div class="column2">Unit price</div>
+					<div class="column3">Units</div>
 				</div>
-				<div class="product-item col-md-3 pb-4">
-					<a href="single-product.html" class="product-image"><img src="images/jeans.png"></a>
+				<div class="cart-items">
+					<!-- render cart items here -->
+				</div>
+				<div class="cart-footer">
+					<div class="subtotal">
+						Subtotal (0 items): $0
+					</div>
 					
-					<div class="text-comtent text-center">
-						<h5 class="pt-4"><a href="single-product.html">Pants</a></h5>
-						<p>Pants - standard</p>
-						<span class="price colored">$12</span>
+					
+					
+					<div class="checkout">
+						Check out down Below
 					</div>
+					
 				</div>
-				<div class="product-item col-md-3 pb-4">
-					<a href="single-product.html" class="product-image"><img src="images/sshirt.png"></a>
-					<div class="text-comtent text-center">
-						<h5 class="pt-4"><a href="single-product.html">Sweatshirt</a></h5>
-						<p>Standard - sweatshirt</p>
-						<span class="price colored">$12</span>
-					</div>
-				</div>
-				<div class="product-item col-md-3 pb-4">
-					<a href="single-product.html" class="product-image"><img src="images/shorts2.png"></a>
-				    <div class="text-comtent text-center">
-						<h5 class="pt-4"><a href="single-product.html">Shorts</a></h5>
-						<p>Standard - shorts</p>
-						<span class="price colored">$12</span>
-					</div>
-				</div>
+				<p>Click on add button on product to add to cart</p>
+				<p>Click on any product within the cart to remove</p>
+			</div>
+		</div>
 
-				<div class="product-item col-md-3 pb-4">
-					<a href="single-product.html" class="product-image"><img src="images/jacket.png"></a>
-				    <div class="text-comtent text-center">
-						<h5 class="pt-4"><a href="single-product.html">Jacket</a></h5>
-						<p>Jacket - Adult</p>
-						<span class="price colored">$12</span>
-					</div>
-				</div>
 
-				<div class="product-item col-md-3 pb-4">
-					<a href="single-product.html" class="product-image"><img src="images/fs.png"></a>
-				    <div class="text-comtent text-center">
-						<h5 class="pt-4"><a href="single-product.html">Shirt</a></h5>
-						<p>Full sleeve shirt</p>
-						<span class="price colored">$12</span>
-					</div>
-				</div>
+		<script>
+			const porductsListEl = document.querySelector(".products-list");
+			const seeMoreBtn = document.querySelector(".see-more-btn");
+		
+			seeMoreBtn.addEventListener('click', () => {
+				porductsListEl.scrollIntoView({behavior: "smooth"})
+			})
+		</script>
+		
+		<script src="./products.js"></script>
+		<script src="./app.js"></script>
 
-				<div class="product-item col-md-3 pb-4">
-					<a href="single-product.html" class="product-image"><img src="images/under.png"></a>
-				    <div class="text-comtent text-center">
-						<h5 class="pt-4"><a href="single-product.html">Undergarments</a></h5>
-						<p>Standard - underwear</p>
-						<span class="price colored">$12</span>
-					</div>
-				</div>
+
+
+		<br>
+		<br>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<br>
+		<br>
+		<br>
+		
 		
 
-		</div>
-	</div>
-</section>
+
+
+
+		<div class="row">
+			<div class="col-75">
+			  <div class="container">
+				<form action="/action_page.php">
+				
+				  <div class="row">
+					<div class="col-50">
+					  <h1>Billing Address</h1>
+					  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+					  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+					  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+					  <input type="text" id="email" name="email" placeholder="john@example.com">
+					  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+					  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+					  <label for="city"><i class="fa fa-institution"></i> City</label>
+					  <input type="text" id="city" name="city" placeholder="New York">
+		  
+					  <div class="row">
+						<div class="col-50">
+						  <label for="state">State</label>
+						  <input type="text" id="state" name="state" placeholder="NY">
+						</div>
+						<div class="col-50">
+						  <label for="zip">Zip</label>
+						  <input type="text" id="zip" name="zip" placeholder="10001">
+						</div>
+					  </div>
+					</div>
+		  
+					<div class="col-50">
+					  <h1>Payment</h1>
+					  <label for="fname">Accepted Cards : Visa , Master Card , Google Pay , Apple Pay</label>
+					  
+					  <label for="cname">Name on Card</label>
+					  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+					  <label for="ccnum">Credit card number</label>
+					  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+					  <label for="expmonth">Exp Month</label>
+					  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+					  <div class="row">
+						<div class="col-50">
+						  <label for="expyear">Exp Year</label>
+						  <input type="text" id="expyear" name="expyear" placeholder="2018">
+						</div>
+						<div class="col-50">
+						  <label for="cvv">CVV</label>
+						  <input type="text" id="cvv" name="cvv" placeholder="352">
+						</div>
+					  </div>
+					</div>
+					
+				  </div>
+
+				 
+				  <label>
+					<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+				  </label>
+				  <input type="submit" value="Payment" class="btn">
+				</form>
+			  </div>
+			</div>
+
+
+
+
+
+
+
+
+	</section>
+
+
 
 <footer id="footer">
 	<div class="container">
