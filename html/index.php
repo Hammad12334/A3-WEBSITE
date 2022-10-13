@@ -240,11 +240,16 @@ if (isset($_POST["logout"])) {
 
 
 
+<section class="best-products margin-large">
+	<div class="container">
+			<h2 class="section-title text-center mb-4">OUR SERVICES</h2>
+		<div class="row">
+		<img src="images/RR.png" >
 
-<section class="gallery-wrap margin-medium">
-
+				
+		</div>
+	</div>
 </section>
-
 
 
 
