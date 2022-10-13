@@ -147,9 +147,9 @@ if (isset($_POST["logout"])) {
 			</figure>
 			
 			<div class="text-content col-md-8">
-				<span>- FRESHLY BAKED EVERY MORNING</span>
-				<h2 class="text-uppercase colored padding-xsmall"><a href="">Enjoy with these cakes</a></h2>
-				<p>A gorgeous selection of our favorites for a client to send as a new year’s gift.A gorgeous selection of our favorites for a client to send as a new year’s gift</p>
+				<span></span>
+				<h2 class="text-uppercase colored padding-xsmall"><a href="">Spend your time doing things you love</a></h2>
+				<p>The ultimate laundry solution is here!</p>
 				<div class="pix_btn">
 					<a href="login.html" class="btn-hvr-effects mt-3">Log In</a>
 				</div>
