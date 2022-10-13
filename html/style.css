@@ -1,49 +1,4 @@
-/*
-Theme Name: Bakery
-Theme URI: https://mokshastudio.com/
-Author: Moksha Design Studio
-Author URI: https://mokshastudio.com/
-Description: Bakery is specially designed product packaged for Bakery by Moksha.
-Version: 1.1
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: trektrack
-Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
-*/
 
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
-
-/*------------------------------------*\
-    Table of contents
-\*------------------------------------*/
-/*
-1. Normalize
-2. Base Styles
-  - Clearfix
-  - Floating & Alignment
-3. Typography
-4. Divider Styles
-5. Image Styles
-  - Image with Caption
-6. Form Styles
-7. Button Styles
-  - Button Sizes
-  - Button Shapes
-  - Button Color Scheme
-8. Grid Layout
-  - Rows
-  - Columns
-  - Column with Border
-  - Responsive Utilities
-9. Table Styles
-10. Site Structure
-11. Magnific Popup
-
-/*--------------------------------------------------------------
-/** 1. Normalize
---------------------------------------------------------------*/
 html, body {
   position: relative;
   width: 100%;
