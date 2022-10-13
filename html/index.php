@@ -149,7 +149,9 @@ if (isset($_POST["logout"])) {
 			<div class="text-content col-md-8">
 				<span></span>
 				<h2 class="text-uppercase colored padding-xsmall"><a href="">Spend your time doing things you love</a></h2>
-				<p>The ultimate laundry solution is here!</p>
+				<p>The ultimate laundry solution is here!
+					Have your dirty clothings to be picked up by our friendly staff and taken it to the laundry store  washed , dry and fold it and send it back to you like brand new. Choosing Laundry X means bringing a better route for your clothing! Use LaundryX Now! 
+				</p>
 				<div class="pix_btn">
 					<a href="login.html" class="btn-hvr-effects mt-3">Log In</a>
 				</div>
