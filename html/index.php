@@ -277,6 +277,7 @@ if (isset($_POST["logout"])) {
 							<li><a href="#">Shop</a></li>
 							<li><a href="blog.html">Blogs</a></li>
 							<li><a href="contact.html">Contact us</a></li>
+							<li><a href="contact.html">JOIN US AS A DRIVER </a></li>
 						</ul>
 					</div>
 					<div class="detail mb-4">
