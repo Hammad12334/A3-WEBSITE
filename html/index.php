@@ -16,7 +16,7 @@ if (isset($_POST["logout"])) {
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>LaundryX</title>
+		<title>LaundryX - Home</title>
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -279,6 +279,16 @@ if (isset($_POST["logout"])) {
 							<li><a href="contact.html">Contact us</a></li>
 						</ul>
 					</div>
+					<div class="detail mb-4">
+						<h3>Social Links</h3>
+						<div class="social-links flex-container">
+							<a href="#" class="icon icon-facebook"></a>
+							<a href="#" class="icon icon-twitter"></a>
+							<a href="#" class="icon icon-pinterest-p"></a>
+							<a href="#" class="icon icon-youtube"></a>
+							<a href="#" class="icon icon-linkedin"></a>
+						</div><!--social-links-->
+					</div><!--detail-->
 				</div>
 			</div>
 
@@ -301,8 +311,7 @@ if (isset($_POST["logout"])) {
 		</div>
 	</div>
 </div>
-
-</div>   
+ 
 
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
