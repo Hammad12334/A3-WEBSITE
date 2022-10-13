@@ -132,7 +132,7 @@ if (isset($_POST["logout"])) {
 				<h2 class="text-uppercase colored padding-xsmall"><a href="#">No Laundry and No time? No worries!</a></h2>
 				<p>LaundryX can do all! Simply click few buttons to access the  best laundry experience you will ever have! Try it now by login to our site and start your careless laundry journey! </p>
 				<div class="pix_btn">
-					<a href="login.html" class="btn-hvr-effects mt-3">Log In</a>
+					<a href="login.php" class="btn-hvr-effects mt-3">Log In</a>
 					
 				</div>
 			</div><!--content-box-->
@@ -153,7 +153,7 @@ if (isset($_POST["logout"])) {
 					Have your dirty clothings to be picked up by our friendly staff and taken it to the laundry store  washed , dry and fold it and send it back to you like brand new. Choosing Laundry X means bringing a better route for your clothing! Use LaundryX Now! 
 				</p>
 				<div class="pix_btn">
-					<a href="login.html" class="btn-hvr-effects mt-3">Log In</a>
+					<a href="login.php" class="btn-hvr-effects mt-3">Log In</a>
 				</div>
 			</div><!--content-box-->
 
