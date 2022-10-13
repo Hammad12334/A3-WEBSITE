@@ -1,3 +1,18 @@
+<?php
+//protecting the other pages via session
+
+session_start();
+
+
+
+//logout
+if (isset($_POST["logout"])) {
+	unset($_SESSION["user"]);
+}
+
+?>
+
+
 <!DOCTYPE html>
 	<html>
 	<head>
@@ -54,39 +69,50 @@
 
 					<div class="navbar-collapse collapse" id="slide-navbar-collapse">
 						<ul class="navbar-nav list-inline text-uppercase">
-							<li class="nav-item text-hover active"><a href="index.html" class="nav-link" data-effect="Home">Home</a></li>
-							<li class="nav-item text-hover"><a href="login.html" class="nav-link" data-effect="Contact">Login</a></li>
+							<li class="nav-item text-hover active"><a href="index.php" class="nav-link" data-effect="Home">Home</a></li>
+							<li class="nav-item text-hover"><a href="login.php" class="nav-link" data-effect="Contact">Login</a></li>
 							<li class="nav-item text-hover"><a href="about.html" class="nav-link" data-effect="About Us">About us</a></li>
 	
 							<li class="nav-item text-hover"><a href="contact.html" class="nav-link" data-effect="Contact">Contact us</a></li>
-							<li class="nav-item text-hover"><a href="shop.html" class="nav-link" data-effect="Contact">Shop</a></li>
-							
+							<li class="nav-item text-hover"><a href="shop.php" class="nav-link" data-effect="Contact">Shop</a></li>
 
+							
+					
 						
 
 						</ul>
 					</div>
 
 					<div class="action-menu">
-						<div class="searchbar">
-							<a href="#" class="search-button search-toggle" data-selector=".navbar">
-								<i class="icon icon-search"></i>
-							</a>
-							<form role="search" method="get" class="search-box" action="">
-								<input class="search-field text search-input" placeholder="Search" type="search">
-							</form>
-						</div>
-						<div class="shopping-cart">
+
+
+					<div class="shopping-cart">
 							<a href="shop.html">
 								<i class="icon icon-shopping-cart"></i>
 							</a>
 						</div>
+						<br>
+						
+						<form method="post" >
+							<input type= "hidden" name ="logout" value="1"/>
+							<input type= "submit" value="logout"/>
+						</form>	
+							
+						
+						
+
+						
 					</div><!--action-menu-->
 
 				</nav>
 
-			</div>		
+				
+
+			</div>	
+			
 		</div>
+
+		
 
 	</header>
 

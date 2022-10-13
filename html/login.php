@@ -54,15 +54,17 @@
 
 				<div class="navbar-collapse collapse" id="slide-navbar-collapse">
 					<ul class="navbar-nav list-inline text-uppercase">
-						<li class="nav-item text-hover"><a href="index.html" class="nav-link" data-effect="Home">Home</a></li>
-						<li class="nav-item text-hover active"><a href="login.html" class="nav-link" data-effect="Contact">Login</a></li>
+						<li class="nav-item text-hover"><a href="index.php" class="nav-link" data-effect="Home">Home</a></li>
+						<li class="nav-item text-hover active"><a href="login.php" class="nav-link" data-effect="Contact">Login</a></li>
 						<li class="nav-item text-hover "><a href="about.html" class="nav-link" data-effect="About Us">About us</a></li>
 				
 						<li class="nav-item text-hover"><a href="contact.html" class="nav-link" data-effect="Contact">Contact us</a></li>
-						<li class="nav-item text-hover"><a href="shop.html" class="nav-link" data-effect="Contact">Shop</a></li>
+						<li class="nav-item text-hover"><a href="shop.php" class="nav-link" data-effect="Contact">Shop</a></li>
+
 						
 
-
+						
+						
 					</ul>
 				</div>
 
@@ -91,7 +93,7 @@
 
 <div class="site-banner">
 	<div class="banner-content">
-		<form class="modal-content animate" action="/action_page.php" method="post">
+		<form class="modal-content animate"  method="post">
 			<div class="imgcontainer">
 			  
 			  <img src="images/main-logo.png" alt="Avatar" class="avatar">
@@ -99,21 +101,29 @@
 		
 			<div class="container">
 			  <label for="uname"><h4>Username</h4></label>
-			  <input type="text" placeholder="Enter Username" name="uname" required>
+			  <input type="text" placeholder="Enter Username" name="user" required>
 		
 			  <label for="psw"><h4>Password</h4></label>
-			  <input type="password" placeholder="Enter Password" name="psw" required>
+			  <input type="password" placeholder="Enter Password" name="password" required>
 				
 			  <button type="submit">Login</button>
-			  <label>
-				<input type="checkbox" checked="checked" name="remember"> Remember me
-			  </label>
+			
 			</div>
 		
 			
 		  </form>
 	</div>
-</div><!--site-banner-->
+ 
+<?php
+
+ 
+
+// Process fothe login using phph
+
+require "check.php" ;
+if(isset($failed)) {echo "Invalid Username/Password" ; }
+
+?>
 
 
 
